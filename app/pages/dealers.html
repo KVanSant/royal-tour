@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Royal Tour Bicycles</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="models.html">Models</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="dealers.html">Dealers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="store.html">Store</a></li>
+        </ul>
+      <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Royal Tour logo" id="logo"></a>
+     </nav>
+  </header>
+  <section class="dealers-page">
+    <div id="map"></div>
+    <div id="dealers-container">
+      <h2>Dealers</h2>
+      <div class="dealer">
+        <div class="small-wrapper">
+          <h3 class="location-name">Paris on Ponce</h3>
+          <p class="dealer-information">
+            716 Ponce de Leon Place <br>
+            Atlanta, GA 30306 <br>
+            <a href="tel:(404) 262-9853">404-249-9965</a> <br>
+            <a href="http://www.parisonponce.com/">Website</a> <br>
+            <a href="#" class="location">View on map</a>
+          </p>
+        </div>
+      </div>
+      <div class="dealer">
+        <div class="small-wrapper">
+          <h3 class="location-name">Peachtree Bikes</h3>
+          <p class="dealer-information">
+            3098 Roswell Rd. <br>
+            Atlanta, GA 30305 <br>
+            <a href="tel:(404) 262-9853">404-262-9853</a> <br>
+            <a href="http://www.peachtreebikes.com/">Website</a> <br>
+            <a href="#" class="location">View on map</a>
+          </p>
+        </div>
+      </div>
+      <div class="dealer">
+        <div class="small-wrapper">
+          <h3 class="location-name">The Goat Farm</h3>
+          <p class="dealer-information">
+            1200 Foster Street <br>
+            Atlanta, GA 30318 <br>
+            <a href="tel:(404) 922-1954">404-922-1954</a> <br>
+            <a href="https://www.facebook.com/TheGoatFarmArtsCenter">Website</a> <br>
+            <a href="#" class="location">View on map</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+
+  </footer>
+    <script src="/scripts/app.js"></script>
+    <script>
+        function initMap() {
+          var mapDiv = document.getElementById('map');
+            var map = new google.maps.Map(mapDiv, {
+              center: {lat: 44.540, lng: -78.546},
+              zoom: 8
+            });
+          }
+      </script>
+    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+     async defer></script>
+</body>
+</html>
