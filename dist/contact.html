@@ -20,41 +20,49 @@
       </ul>
      </nav>
   </header>
-  <section class="padding">
-    <div class="contact-image">
-      <img src="">
+  <section class="padding" id="contact-details-section">
+    <div id="contact-image">
+      <img src="assets/images/IMG_0069.jpg">
     </div>
-    <div class="contact-details">
-      <div class="contact-intro">
+    <div id="contact">
+      <div id="contact-intro">
+        <h2>Contact</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna magna aliqua aliqua
         </p>
       </div>
-      <div class="phone">
-        <img src="">
-        <a href=""></a>
+      <div id="contact-details">
+        <div class="phone detail-row">
+          <img src="assets/images/telephone.png" class="contact-icons">
+          <a href="" class="detail-link">404-922-1954</a>
+        </div>
+        <div class="email detail-row">
+          <img src="assets/images/email.png" class="contact-icons">
+          <a href="" class="detail-link">info@royaltourbicycles.com</a>
+        </div>
+        <div class="address detail-row">
+          <img src="assets/images/map pin.png" class="contact-icons">
+          <a href="" class="detail-link">1200 Foster Street NW ER-2 <br> <span class="address-city">Atlanta, Ga 30318</span> </a>
+        </div>
+        <div class="social detail-row">
+          <a href="https://pinterest.com/royaltourbicycles/" class="social"><img src="assets/images/pinterest.png" alt="Pinterest Logo"></a>
+          <a href="https://twitter.com/royaltourbicycles/" class="social"><img src="assets/images/twitter.png" alt="Twitter Logo"></a>
+          <a href="https://instagram.com/royaltourbicycles/" class="social"><img src="assets/images/instagram.png" alt="Instagram Logo"></a>
+        </div>
       </div>
-      <div class="email">
-        <img src="">
-        <a href=""></a>
-      </div>
-      <div class="address">
-        <img src="">
-        <a href=""></a</a>
-      </div>
-      <div class="social">
-        <img src="">
-        <a href="https://pinterest.com/royaltourbicycles/" class="social"><img src="assets/images/pinterest.png" alt="Pinterest Logo"></a>
-        <a href="https://twitter.com/royaltourbicycles/" class="social"><img src="assets/images/twitter.png" alt="Twitter Logo"></a>
-        <a href="https://instagram.com/royaltourbicycles/" class="social"><img src="assets/images/instagram.png" alt="Instagram Logo"></a>
-      </div>
-      <a href="" class="faq">Faq</a>
     </div>
   </section>
-  <section>
-    <form class="contact-form">
-
+  <section id="contact-form-section">
+    <hr>
+    <form action="" method="post" class="form">
+      <input type='hidden' name='redirect_to' value='http://localhost:3000/contact.html/#thank-you' />
+      <input type='text' name='name' placeholder='Your Full Name' />
+      <input type='email' name='email' placeholder='Your E-mail Address' />
+      <textarea name='message' placeholder='Write your message ...' onkeyup="adjust_textarea(this)"></textarea>
+      <input type='submit' name="send" value='Send Message' />
     </form>
+    <p id="thank-you"></p>
+    <p id='thank-you-message' class='hidden'>Thank you so much for your message. <br> We look forward to reading it and will be in touch soon.</p>
   </section>
   <footer>
     <div class="footer-social">
@@ -74,5 +82,19 @@
     <div class="copyright"> Ⓒ 2016 All Rights Reserved</div>
   </footer>
     <script src="/scripts/app.js"></script>
+    <script type="text/javascript">
+      window.onload = (function(){
+          if(window.location.hash == '#thank-you'){
+          document.getElementById('thank-you-message').className = 'visible';
+          }
+      });
+    </script>
+    <script type="text/javascript">
+      //auto expand textarea
+      function adjust_textarea(h) {
+          h.style.height = "20px";
+          h.style.height = (h.scrollHeight)+"px";
+      }
+    </script>
 </body>
 </html>
