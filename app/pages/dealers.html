@@ -5,10 +5,14 @@
     <title>Royal Tour Bicycles</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:300|Fanwood+Text' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.3.0/mapbox.css' rel='stylesheet' />
 </head>
 <body>
   <header>
-    <nav>
+    <nav id="responsive-nav" class="navigation">
       <ul>
         <li><a href="models.html">Models</a></li>
         <li><a href="process.html">Process</a></li>
@@ -19,9 +23,33 @@
         <li><a href="store.html">Store</a></li>
       </ul>
      </nav>
+     <div id="mobile-only" class="navigation">
+       <div class="mobile-models mobile-nav">
+         <a href="models.html">models</a>
+       </div>
+       <div class="mobile-menu dropdown mobile-nav">
+         <button onclick="dropMenu()" class="drop-button">Menu</button>
+         <div id="mobile-dropdown" class="dropdown-list">
+           <a href="models.html">Models</a>
+           <a href="process.html">Process</a>
+           <a href="about.html">About</a>
+           <a href="dealers.html">Dealers</a>
+           <a href="contact.html">Contact</a>
+           <a href="store.html">Store</a>
+         </div>
+       </div>
+       <div class="mobile-logo mobile-nav">
+         <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Royal Tour logo" id="logo"></a>
+       </div>
+       <div class="mobile-locations mobile-nav">
+         <a href="dealers.html">dealers</a>
+       </div>
+       <div class="mobile-contact mobile-nav">
+         <a href="contact.html">Contact</a>
+       </div>
+     </div>
   </header>
   <section class="dealers-page padding">
-    <div id="map"></div>
     <div id="dealers-container">
       <h2>Dealers</h2>
       <div class="dealer">
@@ -32,7 +60,6 @@
             Atlanta, GA 30306 <br>
             <a href="tel:(404) 262-9853">404-249-9965</a> <br>
             <a href="http://www.parisonponce.com/">Website</a> <br>
-            <a href="#" class="location">View on map</a>
           </p>
         </div>
       </div>
@@ -44,7 +71,6 @@
             Atlanta, GA 30305 <br>
             <a href="tel:(404) 262-9853">404-262-9853</a> <br>
             <a href="http://www.peachtreebikes.com/">Website</a> <br>
-            <a href="#" class="location">View on map</a>
           </p>
         </div>
       </div>
@@ -56,11 +82,11 @@
             Atlanta, GA 30318 <br>
             <a href="tel:(404) 922-1954">404-922-1954</a> <br>
             <a href="https://www.facebook.com/TheGoatFarmArtsCenter">Website</a> <br>
-            <a href="#" class="location">View on map</a>
           </p>
         </div>
       </div>
     </div>
+    <div id='map'></div>
   </section>
   <footer>
     <div class="footer-social">
@@ -69,7 +95,7 @@
       <a href="https://instagram.com/royaltourbicycles/" class="social"><img src="assets/images/instagram.png" alt="Instagram Logo"></a>
     </div>
     <div class="footer-menu">
-      <a href="faq.html" class="faq">Faq</a>
+      <a href="faq.html" class="faq-link">Faq</a>
       <a href="">Store</a>
       <a href="contact.html">Contact</a>
     </div>
@@ -81,15 +107,74 @@
   </footer>
     <script src="/scripts/app.js"></script>
     <script>
-        function initMap() {
-          var mapDiv = document.getElementById('map');
-            var map = new google.maps.Map(mapDiv, {
-              center: {lat: 44.540, lng: -78.546},
-              zoom: 8
-            });
-          }
-      </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-     async defer></script>
+        L.mapbox.accessToken = 'pk.eyJ1Ijoia3ZhbnNhbnQiLCJhIjoiY2lnd3JhbzZjMHNiOXc3bTVjZnE4enhiaiJ9.H36_ZZoA-FVMyxx6FD4DiQ';
+
+        var map = L.mapbox.map('map', 'mapbox.streets')
+          .setView([33.808102, -84.38119], 12);
+
+        var myLayer = L.mapbox.featureLayer().addTo(map);
+
+          var geojson = {
+            type: 'FeatureCollection',
+            features: [{
+                type: 'Feature',
+                properties: {
+                    title: 'Peachtree Bikes',
+                    'marker-color': '#000000',
+                    'marker-size': 'large',
+                    'marker-symbol': 'bicycle',
+                    url: 'http://www.peachtreebikes.com/'
+                },
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-84.37987988, 33.839416]
+                }
+            },
+            {
+                type: 'Feature',
+                properties: {
+                    title: 'The Goat Farm',
+                    'marker-color': '#000000',
+                    'marker-size': 'large',
+                    'marker-symbol': 'bicycle',
+                    url: 'https://www.facebook.com/TheGoatFarmArtsCenter'
+                },
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-84.417046, 33.785372]
+                }
+              },
+              {
+                type: 'Feature',
+                properties: {
+                    title: 'Paris on Ponce',
+                    'marker-color': '#000000',
+                    'marker-size': 'large',
+                    'marker-symbol': 'bicycle',
+                    url: 'https://www.facebook.com/TheGoatFarmArtsCenter'
+                },
+                geometry: {
+                    type: 'Point',
+                    coordinates: [-84.363718, 33.774125]
+                }
+            }]
+        };
+
+        // Pass features and a custom factory function to the map
+        myLayer.setGeoJSON(geojson);
+        myLayer.on('click', function(e) {
+            window.open(e.layer.feature.properties.url);
+        });
+
+        myLayer.on('mouseover', function(e) {
+            e.layer.openPopup();
+        });
+        myLayer.on('mouseout', function(e) {
+            e.layer.closePopup();
+        });
+
+
+</script>
+
 </body>
 </html>

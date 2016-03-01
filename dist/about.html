@@ -5,10 +5,12 @@
     <title>Royal Tour Bicycles</title>
     <link href='https://fonts.googleapis.com/css?family=Lato:300|Fanwood+Text' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <header>
-    <nav>
+    <nav id="responsive-nav" class="navigation">
       <ul>
         <li><a href="models.html">Models</a></li>
         <li><a href="process.html">Process</a></li>
@@ -19,6 +21,31 @@
         <li><a href="store.html">Store</a></li>
       </ul>
      </nav>
+     <div id="mobile-only" class="navigation">
+       <div class="mobile-models mobile-nav">
+         <a href="models.html">models</a>
+       </div>
+       <div class="mobile-menu dropdown mobile-nav">
+         <button onclick="dropMenu()" class="drop-button">Menu</button>
+         <div id="mobile-dropdown" class="dropdown-list">
+           <a href="models.html">Models</a>
+           <a href="process.html">Process</a>
+           <a href="about.html">About</a>
+           <a href="dealers.html">Dealers</a>
+           <a href="contact.html">Contact</a>
+           <a href="store.html">Store</a>
+         </div>
+       </div>
+       <div class="mobile-logo mobile-nav">
+         <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Royal Tour logo" id="logo"></a>
+       </div>
+       <div class="mobile-locations mobile-nav">
+         <a href="dealers.html">dealers</a>
+       </div>
+       <div class="mobile-contact mobile-nav">
+         <a href="contact.html">Contact</a>
+       </div>
+     </div>
   </header>
   <section class="padding">
     <div id="about-intro">
@@ -72,7 +99,7 @@
       <a href="https://instagram.com/royaltourbicycles/" class="social"><img src="assets/images/instagram.png" alt="Instagram Logo"></a>
     </div>
     <div class="footer-menu">
-      <a href="faq.html" class="faq">Faq</a>
+      <a href="faq.html" class="faq-link">Faq</a>
       <a href="">Store</a>
       <a href="contact.html">Contact</a>
     </div>

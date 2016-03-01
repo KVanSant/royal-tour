@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Royal Tour Bicycles</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300|Fanwood+Text' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <header>
+    <nav id="responsive-nav" class="navigation">
+      <ul>
+        <li><a href="models.html">Models</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Royal Tour logo" id="logo"></a></li>
+        <li><a href="dealers.html">Dealers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="store.html">Store</a></li>
+      </ul>
+     </nav>
+     <div id="mobile-only" class="navigation">
+       <div class="mobile-models mobile-nav">
+         <a href="models.html">models</a>
+       </div>
+       <div class="mobile-menu dropdown mobile-nav">
+         <button onclick="dropMenu()" class="drop-button">Menu</button>
+         <div id="mobile-dropdown" class="dropdown-list">
+           <a href="models.html">Models</a>
+           <a href="process.html">Process</a>
+           <a href="about.html">About</a>
+           <a href="dealers.html">Dealers</a>
+           <a href="contact.html">Contact</a>
+           <a href="store.html">Store</a>
+         </div>
+       </div>
+       <div class="mobile-logo mobile-nav">
+         <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Royal Tour logo" id="logo"></a>
+       </div>
+       <div class="mobile-locations mobile-nav">
+         <a href="dealers.html">dealers</a>
+       </div>
+       <div class="mobile-contact mobile-nav">
+         <a href="contact.html">Contact</a>
+       </div>
+     </div>
+  </header>
+  <section id="bicycle-main" class="padding">
+    <div class="bicycle-photos">
+      <div class="large-image-wrapper">
+        <img src="assets/images/black-royal-tour.jpg" id="large-image">
+      </div>
+      <div class="thumbnails-wrapper">
+        <img src="assets/images/black-royal-tour.jpg" onclick="swap(this);">
+        <img src="assets/images/black-three-quater-profile.jpg" onclick="swap(this);">
+        <img src="assets/images/third-black-bike.jpg"  onclick="swap(this);">
+      </div>
+    </div>
+    <div class="bicycle-story-wrapper">
+      <div class="bicycle-story">
+        <h2>The Edward</h2>
+        <p>
+          Named after famed English royalty "Edward The Black Prince of Whales". True to it's name sake, this American roadster painted in ink high gloss black is countered with light wood and leather components. The American (tan) Cherry wood grip,fenders, and downtube shifter along with cream colored wheels and camel tan colored leather saddle give it the perfect black & tan contrast.
+        </p>
+        <p>Starting at $2,499.00</p>
+      </div>
+    </div>
+  </section>
+  <section id="bicycle-specs">
+    <div class="specs">
+      <h3>Bicycle Specifications</h3>
+      <div>
+        <ul>
+          <li>Double Butted Chromoly Steel Fillet Brazed Frame</li>
+          <li>Mahogany or American Cherry Wood Grips</li>
+          <li>Hand Wrapped Cow Hide Leather Saddle</li>
+          <li>Kenda Kwest 32c Cream Tires</li>
+          <li>Powder Coated High Gloss Black Paint</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <div id="bottom-image-row">
+      <img src="assets/images/saddles.jpg">
+      <img src="assets/images/brass-pedals.jpg">
+      <img src="assets/images/wood-grips.jpg">
+  </div>
+  <footer>
+    <div class="footer-social">
+      <a href="https://pinterest.com/royaltourbicycles/" class="social"><img src="assets/images/pinterest.png" alt="Pinterest Logo"></a>
+      <a href="https://twitter.com/royaltourbicycles/" class="social"><img src="assets/images/twitter.png" alt="Twitter Logo"></a>
+      <a href="https://instagram.com/royaltourbicycles/" class="social"><img src="assets/images/instagram.png" alt="Instagram Logo"></a>
+    </div>
+    <div class="footer-menu">
+      <a href="faq.html" class="faq">Faq</a>
+      <a href="">Store</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <a href="">404-922-1954</a> <br>
+      <a href="">info@royaltourbicycles.com</a>
+    </div>
+    <div class="copyright"> Ⓒ 2016 All Rights Reserved</div>
+  </footer>
+    <script src="/scripts/app.js"></script>
+
+     <script type="text/javascript">
+         function swap(image) {
+             document.getElementById("large-image").src = image.src;
+         }
+     </script>
+
+</body>
+</html>
