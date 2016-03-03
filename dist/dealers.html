@@ -24,28 +24,32 @@
       </ul>
      </nav>
      <div id="mobile-only" class="navigation">
-       <div class="mobile-models mobile-nav">
-         <a href="models.html">models</a>
+       <div id="slide-menu" class="dropdown">
+         <ul>
+           <li><a href="process.html">Process</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="contact.html">Contact</a></li>
+           <li><a href="#" onclick="dropMenu()">Close</a></li>
+         </ul>
        </div>
-       <div class="mobile-menu dropdown mobile-nav">
-         <button onclick="dropMenu()" class="drop-button">Menu</button>
-         <div id="mobile-dropdown" class="dropdown-list">
-           <a href="models.html">Models</a>
-           <a href="process.html">Process</a>
-           <a href="about.html">About</a>
-           <a href="dealers.html">Dealers</a>
-           <a href="contact.html">Contact</a>
-           <a href="store.html">Store</a>
-         </div>
-       </div>
-       <div class="mobile-logo mobile-nav">
-         <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Royal Tour logo" id="logo"></a>
-       </div>
-       <div class="mobile-locations mobile-nav">
-         <a href="dealers.html">dealers</a>
-       </div>
-       <div class="mobile-contact mobile-nav">
-         <a href="contact.html">Contact</a>
+       <div id="static-menu">
+         <ul>
+           <li class="mobile-models mobile-nav">
+             <a href="models.html"><img src="assets/images/mtb_bike.png" class="icon"></a>
+           </li>
+           <li class="mobile-menu dropdown mobile-nav">
+             <a  href="#slide-menu" onclick="dropMenu()" class="icon">Menu</a>
+           </li>
+           <li class="mobile-logo mobile-nav">
+             <a href="index.html" class="nav-logo"><img src="assets/images/logo.png" alt="Royal Tour logo" id="logo"></a>
+           </li>
+           <li class="mobile-locations mobile-nav">
+             <a href="dealers.html"><img src="assets/images/locations.png" class="icon"></a>
+           </li>
+           <li class="mobile-contact mobile-nav">
+             <a href="store.html"><img src="assets/images/shop.png" class="icon"></a>
+           </li>
+         </ul>
        </div>
      </div>
   </header>
