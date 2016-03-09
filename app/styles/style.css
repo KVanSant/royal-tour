@@ -116,6 +116,7 @@ nav li a {
 }
 #slide-menu a {
   font-size: 18px;
+
 }
 
 #static-menu {
@@ -258,25 +259,34 @@ nav li a {
 /********************** Models *************************/
 
 .model-intro-container {
-  height: 500px;
+  height: 420px;
   max-width: 100%;
+  padding: 1%;
 }
 
+.model-intro-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
 
 .model-list {
-  width: 90%;
-  margin: auto;
+  width: 100%;
   text-align: center;
 }
 
 .model-container {
   height: 450px;
+  width: 100%;
+  float: left;
   display: inline-block;
-  padding: 1%;
   text-align: center;
 }
 
+
 .model-image-container {
+  width: 100%;
   height: 340px;
   display: block;
 }
@@ -285,9 +295,9 @@ nav li a {
   display: block;
 }
 
-.model-image {
-  max-width: 100%;
-  height: 340px;
+.model-image  {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
 
@@ -302,13 +312,13 @@ nav li a {
   padding-bottom: 5%;
   width: 100%;
   text-align: center;
+
 }
 
 .bicycle-photos {
-  width: 55%;
-  display: inline-block;
+  width: 100%;
+  display: block;
   margin: 0;
-  height: 100%;
 
 }
 
@@ -328,28 +338,34 @@ div.thumbnails-wrapper img {
 
 
 .bicycle-story-wrapper {
-  width: 45%;
-  display: inline-block;
-  float: right;
+  width: 60%
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
 .bicycle-story {
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 90%;
 
 }
 
 
-.bicycle-story h2 {
-  font-size: 5em;
+.bike-name {
+  font-size: 3em;
   letter-spacing: 4px;
-  margin-bottom: 0;
   font-family: 'Lato', sans-serif;
 }
 
 .bicycle-story p {
   line-height: 32px;
   font-size: 24px;
+}
+
+.bicycle-story p:first-of-type {
+  text-align: justify;
 }
 
 
@@ -466,13 +482,11 @@ div.thumbnails-wrapper img {
 
 #build-process {
   width: 100%;
-
 }
 
 .process-description-wrapper {
   width: 25%;
   margin: 3%;
-
   display: inline-block;
   background-color: #FAFAFA;
 }
@@ -575,12 +589,12 @@ div.thumbnails-wrapper img {
   font-family: 'Lato', sans-serif;
   text-align: center;
   padding-bottom: 2%;
-  font-size: 21px;
+
 }
 
 
 #about-container {
-  max-width: 85%;
+  max-width: 100%;
   text-align: center;
   margin: auto;
   padding-bottom: 3%;
@@ -588,26 +602,39 @@ div.thumbnails-wrapper img {
 
 
 #about-sidebar {
-  max-width: 35%;
-  display: inline-block;
-  text-align: left;
-  float: left;
-  vertical-align: top;
+  max-width: 100%;
+  display: block;
+  background-color: #FAFAFA;
 }
 
 #about-sidebar h3 {
   font-family: 'Lato', sans-serif;
-  font-size: 24px;
+  font-size: 19px;
 }
 
 #about-sidebar img {
-  width: 400px;
+  width: 100%;
   height: 300px;
   object-fit: cover;
 }
 
+#sidebar-list {
+  text-align: center;
+
+  margin: 2%;
+}
+
+.sidebar-inner-containers {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  text-align: left;
+}
+
+
 #about-sidebar ul {
   padding: 0;
+
 }
 
 
@@ -622,16 +649,20 @@ div.thumbnails-wrapper img {
 }
 
 
-
 .author {
   font-style: italic;
 }
 
+
+.about-faq {
+  display: none;
+}
+
 #about-main-content {
-  max-width: 55%;
-  display: inline-block;
+  width: 90%;
+  display: block;
   text-align: left;
-  padding-left: 5%;
+  margin: auto;
 }
 
 

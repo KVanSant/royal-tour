@@ -79,6 +79,8 @@
  }
 
 
+/*** individual bike model page ***/
+
 
 /*** contact page ***/
 
@@ -152,6 +154,24 @@
     width: auto;
   }
 
+  .bike-name {
+    font-size: 2em;
+  }
+
+  .bicycle-story p {
+    line-height: 26px;
+    font-size: 19px;
+  }
+
+  .sidebar-inner-containers {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #about-main-content {
+    text-align: justify;
+  }
 
 }
 
@@ -178,8 +198,32 @@
     display: none;
   }
 
-/*** landing page ***/
+/*** Individual models page ***/
 
+.model-list {
+  width: 90%;
+  margin: auto;
+}
+.model-container {
+  display: block;
+  width: 50%;
+}
+
+/*** contact page ***/
+
+#about-intro {
+  font-size: 21px;
+}
+#about-main-content {
+  max-width: 80%;
+
+}
+
+
+#about-sidebar h3 {
+  font-size: 24px;
+
+}
 
 
 }
@@ -199,9 +243,77 @@ nav li {
   font-size: 16px;
 }
 
+/*** individual models page ***/
 
 
-/*** landing page ***/
+
+#bicycle-main {
+  height: 750px;
+}
+
+.bicycle-photos {
+  width: 55%;
+  display: inline-block;
+  margin: 0;
+  height: 100%;
+  float: left;
+}
+
+.bike-name {
+  margin: 0;
+}
+
+.bicycle-story-wrapper {
+  width: 45%;
+  height: 100%;
+  display: inline-flex;
+}
+
+
+
+
+
+
+/*** contact page ***/
+
+
+#about-container {
+  max-width: 85%;
+}
+
+
+#about-sidebar {
+  max-width: 35%;
+  display: inline-block;
+  float: left;
+  vertical-align: top;
+}
+
+#about-sidebar img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+
+
+
+.sidebar-inner-containers {
+  width: 100%;
+}
+
+#about-main-content {
+  max-width: 65%;
+  display: inline-block;
+  padding-left: 5%;
+}
+
+.about-faq {
+  display: block;
+  text-align: left;
+}
+
+
 
 
 
