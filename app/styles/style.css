@@ -25,7 +25,7 @@ li {
 }
 
 .padding {
-    padding-top: 160px;
+    padding-top: 170px;
 }
 /********************** Navigation *************************/
 
@@ -261,14 +261,41 @@ nav li a {
 .model-intro-container {
   height: 420px;
   max-width: 100%;
-  padding: 1%;
+  padding: 0;
+  background-color: #EFEFF1;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.model-intro {
+  height: 100%;
+  width: 34%;
+  display: inline-block;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.model-intro h2 {
+  font-size: 36px;
+  font-family: 'Lato', sans-serif;
+}
+
+.model-intro p {
+  text-align: center;
+  line-height: 28px;
+  font-size: 22px;
+  padding: 3%;
+}
+
+.model-intro hr {
+  background: 1px solid black;
+  width: 20%;
 }
 
 .model-intro-container img {
-  width: 100%;
+  width: 33%;
   height: 100%;
   object-fit: cover;
-
 }
 
 .model-list {
@@ -372,13 +399,14 @@ div.thumbnails-wrapper img {
 #bicycle-specs {
   border-top: 1px solid #E8E8E8;
   border-bottom: 1px solid #E8E8E8;
-  padding: 5%;
-  text-align: center;
+  padding: 3% 0;
+  text-align: left
 }
 
 
 #bicycle-specs h3 {
-  font-size: 3em;
+  text-align: center;
+  font-size: 2em;
   font-family: 'Lato', sans-serif;
   letter-spacing: 2px;
   margin-bottom: 0;
@@ -386,21 +414,33 @@ div.thumbnails-wrapper img {
 }
 
 .specs {
-  margin: auto;
-  width: 80%;
+  width: 100%;
+  text-align: center;
 }
 
 .specs li {
-  font-size: 22px;
+  font-size: 17px;
   padding-bottom: 1%;
   list-style: square;
   list-style-position: inside;
+  text-align: left;
 }
 
 .specs ul {
   padding: 0;
+  width: 100%;
+
 }
 
+.specs-divider {
+  display: block;
+  padding: 3% 6% 0 6%;
+}
+
+.second-divider {
+  padding-top: 0;
+  margin-top: -15px;
+}
 
 #bottom-image-row {
   height: 400px;
@@ -452,7 +492,7 @@ div.thumbnails-wrapper img {
   margin: 0;
   padding-left: 5%;
   padding-top: 5%;
-  font-size: 5em;
+  font-size: 4em;
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.2em;
 }
@@ -716,29 +756,30 @@ section.dealers-page {
 }
 
 #map {
-  height: 520px;
-  width: 50%;
-  display: inline-block;
+  height: 460px;
+  width: 100%;
+  display: block;
 }
 
 #dealers-container {
   height: 100%;
-  width: 45%;
-  display: inline-block;
-  float: left;
-  text-align: center;
+  width: 100%;
+
 }
 
-#dealers-container h2 {
-  text-align: center;
-  font-size: 2em;
-  font-family: 'Lato', sans-serif;
-  margin-top: 0;
+#inner-dealers-container {
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  padding: 4%;
 }
+
 
 .dealer {
-  padding-top: 3px;
   font-size: 19px;
+  padding: 2%;
+  float: left;
 }
 
 
@@ -750,7 +791,13 @@ section.dealers-page {
   margin-top: 0;
 }
 
-
+.dealers-note {
+  width: 80%;
+  text-align: justify;
+  margin: auto;
+  padding-top: 4%;
+  font-size: 19px;
+}
 
 /********************** Contact *************************/
 
@@ -773,7 +820,6 @@ section.dealers-page {
   object-fit: cover;
   width: 100%;
   height: 100%;
-
 
 }
 
@@ -818,6 +864,9 @@ section.dealers-page {
 }
 
 
+#contact-form-section {
+  height: 340px;
+}
 
 .hidden {
   display: none;

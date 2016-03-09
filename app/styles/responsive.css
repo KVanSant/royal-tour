@@ -81,7 +81,10 @@
 
 /*** individual bike model page ***/
 
-
+.bicycle-story p {
+  line-height: 26px;
+  font-size: 19px;
+}
 /*** contact page ***/
 
   #contact-details-section {
@@ -158,10 +161,7 @@
     font-size: 2em;
   }
 
-  .bicycle-story p {
-    line-height: 26px;
-    font-size: 19px;
-  }
+
 
   .sidebar-inner-containers {
     display: block;
@@ -172,6 +172,14 @@
   #about-main-content {
     text-align: justify;
   }
+
+
+  #inner-dealers-container {
+    flex-flow: column;
+    text-align: center;
+  }
+
+
 
 }
 
@@ -198,6 +206,9 @@
     display: none;
   }
 
+
+
+
 /*** Individual models page ***/
 
 .model-list {
@@ -207,6 +218,19 @@
 .model-container {
   display: block;
   width: 50%;
+}
+
+.specs-divider {
+  display: inline-block;
+  padding: 0;
+  vertical-align: middle;
+  height: 350px;
+}
+
+
+.specs-divider {
+  display: inline-block;
+  padding: 2% 2%;
 }
 
 /*** contact page ***/
@@ -224,6 +248,16 @@
   font-size: 24px;
 
 }
+
+
+/*** dealers page ***/
+
+.dealers-note {
+  width: 50%;
+  text-align: center;
+
+}
+
 
 
 }
@@ -269,9 +303,15 @@ nav li {
   display: inline-flex;
 }
 
+.specs li {
+  font-size: 19px;
+}
 
 
-
+.specs-divider {
+  display: inline-block;
+  padding: 3% 4%;
+}
 
 
 /*** contact page ***/
