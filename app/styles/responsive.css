@@ -22,8 +22,8 @@
 
 
     #logo {
-      height: 118.714px;
-      width: 118.714px;
+      height: 108.714px;
+      width: 108.714px;
     }
 
 
@@ -34,7 +34,7 @@
 
 
   .feature-image {
-    height: 520px;
+    height: 620px;
     object-fit: cover;
   }
 
@@ -207,9 +207,11 @@
   }
 
 
+  #model-list {
+    height: 90rem;
+  }
 
-
-/*** Individual models page ***/
+/*** models page ***/
 
 .model-list {
   width: 90%;
@@ -233,11 +235,11 @@
   padding: 2% 2%;
 }
 
-/*** contact page ***/
+/*** about page ***/
 
-#about-intro {
-  font-size: 21px;
-}
+
+
+
 #about-main-content {
   max-width: 80%;
 
@@ -252,8 +254,8 @@
 
 /*** dealers page ***/
 
-.dealers-note {
-  width: 50%;
+.dealers-note p{
+  width: 70%;
   text-align: center;
 
 }
@@ -282,7 +284,7 @@ nav li {
 
 
 #bicycle-main {
-  height: 750px;
+  height: 45rem;
 }
 
 .bicycle-photos {
@@ -314,10 +316,31 @@ nav li {
 }
 
 
-/*** contact page ***/
+/*** about page ***/
+
+#about-intro {
+  height: 320px;
+  width: 100%;
+  background: url("/assets/images/blackandblue.png") no-repeat;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about-intro h2 {
+  text-align: left;
+  margin: 0;
+  padding-left: 5%;
+  padding-top: 8%;
+  font-size: 2.5em;
+  letter-spacing: 0.2em;
+  color: #FAFAFA;
+}
 
 
-#about-container {
+#inner-about-container {
   max-width: 85%;
 }
 

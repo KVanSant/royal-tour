@@ -12,6 +12,7 @@ body {
   margin: 0;
   font-family: 'Fanwood Text', serif;
   color: #383D3B;
+  background-color: #FAFAFA;
 }
 
 
@@ -25,8 +26,14 @@ li {
 }
 
 .padding {
-    padding-top: 170px;
+    padding-top: 140px;
 }
+
+.top-border {
+  border-top: 1px solid black;
+}
+
+
 /********************** Navigation *************************/
 
 header  {
@@ -72,8 +79,8 @@ nav li a {
 
 
 #logo {
-  height: 138.714px;
-  width: 138.714px;
+  height: 118.714px;
+  width: 118.714px;
 }
 
 #mobile-only {
@@ -161,6 +168,7 @@ nav li a {
 .row {
   width: 100%;
   height: 600px;
+  background-color: white;
 }
 
 .row-image {
@@ -259,13 +267,14 @@ nav li a {
 
 /********************** Models *************************/
 
+
 .model-intro-container {
   height: 420px;
   max-width: 100%;
   padding: 0;
   background-color: #EFEFF1;
   text-align: center;
-  margin-bottom: 5%;
+
 }
 
 .model-intro {
@@ -299,9 +308,12 @@ nav li a {
   object-fit: cover;
 }
 
-.model-list {
+#model-list {
+  background-color: white;
   width: 100%;
-  text-align: center;
+  padding-top: 5%;
+  height: 150rem;
+
 }
 
 .model-container {
@@ -340,14 +352,14 @@ nav li a {
   padding-bottom: 5%;
   width: 100%;
   text-align: center;
-
+  padding-top: 170px;
 }
 
 .bicycle-photos {
   width: 100%;
+  height: 100%;
   display: block;
   margin: 0;
-
 }
 
 #large-image {
@@ -382,14 +394,14 @@ div.thumbnails-wrapper img {
 
 
 .bike-name {
-  font-size: 3em;
+  font-size: 2.5em;
   letter-spacing: 4px;
   font-family: 'Lato', sans-serif;
 }
 
 .bicycle-story p {
-  line-height: 32px;
-  font-size: 24px;
+  line-height: 28px;
+  font-size: 22px;
 }
 
 .bicycle-story p:first-of-type {
@@ -401,7 +413,8 @@ div.thumbnails-wrapper img {
   border-top: 1px solid #E8E8E8;
   border-bottom: 1px solid #E8E8E8;
   padding: 3% 0;
-  text-align: left
+  text-align: left;
+  background-color: white;
 }
 
 
@@ -422,7 +435,7 @@ div.thumbnails-wrapper img {
 .specs li {
   font-size: 17px;
   padding-bottom: 1%;
-  list-style: square;
+  list-style: circle;
   list-style-position: inside;
   text-align: left;
 }
@@ -477,12 +490,7 @@ div.thumbnails-wrapper img {
   justify-content: center;
 }
 
-.process-main-image img {
-  height: 420px;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
+
 
 .process-main-heading {
   width: 100%;
@@ -511,7 +519,6 @@ div.thumbnails-wrapper img {
 .process-intro {
   width: 100%;
   padding: 5% 0;
-  background-color: #FAFAFA;
 }
 
 .process-intro p {
@@ -523,6 +530,7 @@ div.thumbnails-wrapper img {
 
 #build-process {
   width: 100%;
+  background-color: white;
 }
 
 .process-description-wrapper {
@@ -566,15 +574,24 @@ div.thumbnails-wrapper img {
   height: 100%;
 }
 
-
-
 #artisan-intro {
+  width: 100%;
+  background-color: white;
+  text-align: center;
+}
+
+#artisan-intro h2 {
+  margin: 0;
+}
+
+#artisan-intro p{
   width: 50%;
   margin: auto;
   line-height: 28px;
   font-size: 19px;
   padding: 5% 0;
-  text-align: center;
+
+
 }
 
 .artisan {
@@ -626,21 +643,37 @@ div.thumbnails-wrapper img {
 
 /*************************** About **********************************/
 
-#about-intro {
-  font-family: 'Lato', sans-serif;
-  text-align: center;
-  padding-bottom: 2%;
 
+
+#about-intro {
+  height: 220px;
+  width: 100%;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#about-intro h2 {
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.2em;
 }
 
 
 #about-container {
-  max-width: 100%;
+  width: 100%;
   text-align: center;
-  margin: auto;
-  padding-bottom: 3%;
+  background-color: white;
+  padding: 3%;
+  padding-top: 5%;
+  margin: 0;
 }
 
+#inner-about-container {
+  margin: auto;
+}
 
 #about-sidebar {
   max-width: 100%;
@@ -752,7 +785,6 @@ div.thumbnails-wrapper img {
 /*********************** Dealers **************************/
 
 section.dealers-page {
-  padding-top: 190px;
   padding-bottom: 5%;
 }
 
@@ -769,7 +801,6 @@ section.dealers-page {
 }
 
 #inner-dealers-container {
-  background-color: #FAFAFA;
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
@@ -793,11 +824,19 @@ section.dealers-page {
 }
 
 .dealers-note {
+  width: 100%;
+  margin: 0;
+  background-color: white;
+  display: block;
+}
+
+.dealers-note p {
   width: 80%;
   text-align: justify;
   margin: auto;
-  padding-top: 4%;
+  padding: 9% 5%;
   font-size: 19px;
+
 }
 
 /********************** Contact *************************/
@@ -805,7 +844,6 @@ section.dealers-page {
 #contact-details-section {
     height: 600px;
     width: 100%;
-    background-color: #FAFAFA;
     padding-top: 180px;
 }
 
@@ -866,7 +904,12 @@ section.dealers-page {
 
 
 #contact-form-section {
-  height: 340px;
+  height: 390px;
+  background-color: white;
+}
+
+#contact-form-section div {
+  padding-top: 4%;
 }
 
 .hidden {
@@ -879,8 +922,8 @@ section.dealers-page {
 
 .form {
     width: 500px;
-    padding: 30px;
-    margin: 50px auto;
+    padding: 40px;
+    margin: auto;
 }
 
 .form input[type="text"],
@@ -936,28 +979,30 @@ section.dealers-page {
 
 /********** FAQS *************/
 
-section.faq h1 {
-  font-size: 26px;
-  padding-top: 2%;
-
+.faq-outer-wrapper {
+  width: 100%;
 }
 
-/*.faq {
-  background-image: url("/assets/images/IMG_0069.jpg");
-  height: 100%;
-}
-*/
+
+
 .faq-wrapper {
-  background: rgba(255, 255, 255, 0.8);
+  background: #FAFAFA;
+  border: 50px solid white;
+  box-shadow: 0 0 15px #a6a6a6;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
+  padding-bottom: 5%;
   text-align: left;
 }
 
-.faq-wrapper h1 {
+.faq h1 {
+  font-size: 26px;
+  padding: 5% 0 3% 0;
+  font-family: 'Lato', sans-serif;
   text-align: center;
 }
+
 
 .faq-container {
   z-index: 5;
@@ -967,15 +1012,13 @@ section.faq h1 {
 }
 
 
-div.faq ol li {
-    margin: 5%;
-}
 
-div.faq ol li h3 {
+.faq h3 {
   font-size: 23px;
+  font-family: 'Lato', sans-serif;
 }
 
-div.faq ol li p {
+.faq p {
   line-height: 26px;
   font-size: 17px;
 }
@@ -986,7 +1029,6 @@ div.faq ol li p {
 
 footer {
   text-align: center;
-  background-color: #FAFAFA;
   padding: 40px 0 39px 0;
   clear: both;
 }

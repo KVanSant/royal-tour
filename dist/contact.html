@@ -84,15 +84,17 @@
     </div>
   </section>
   <section id="contact-form-section">
-    <form action="" method="post" class="form">
-      <input type='hidden' name='redirect_to' value='http://localhost:3000/contact.html/#thank-you' />
-      <input type='text' name='name' placeholder='Your Full Name' />
-      <input type='email' name='email' placeholder='Your E-mail Address' />
-      <textarea name='message' placeholder='Write your message ...' onkeyup="adjust_textarea(this)"></textarea>
-      <input type='submit' name="send" value='Send Message' />
-    </form>
-    <p id="thank-you"></p>
-    <p id='thank-you-message' class='hidden'>Thank you so much for your message. <br> We look forward to reading it and will be in touch soon.</p>
+    <div>
+      <form action="" method="post" class="form">
+        <input type='hidden' name='redirect_to' value='http://localhost:3000/contact.html/#thank-you' />
+        <input type='text' name='name' placeholder='Your Full Name' />
+        <input type='email' name='email' placeholder='Your E-mail Address' />
+        <textarea name='message' placeholder='Write your message ...' onkeyup="adjust_textarea(this)"></textarea>
+        <input type='submit' name="send" value='Send Message' />
+      </form>
+      <p id="thank-you"></p>
+      <p id='thank-you-message' class='hidden'>Thank you so much for your message. <br> We look forward to reading it and will be in touch soon.</p>
+    </div>
   </section>
   <footer>
     <div class="footer-social">
