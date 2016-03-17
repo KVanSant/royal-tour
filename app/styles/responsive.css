@@ -85,10 +85,12 @@
   line-height: 26px;
   font-size: 19px;
 }
+
+
 /*** contact page ***/
 
   #contact-details-section {
-    padding-top: 160px;   /* rethink padding on mobile */
+    padding-top: 140px;
   }
 
   #contact-image {
@@ -110,7 +112,7 @@
 
 
   #contact-intro h2 {
-    margin-top: 5%;
+    margin-top: 10%;
 
   }
 
@@ -162,6 +164,9 @@
   }
 
 
+  #about-sidebar {
+    padding-bottom: 3%;
+  }
 
   .sidebar-inner-containers {
     display: block;
@@ -170,13 +175,14 @@
   }
 
   #about-main-content {
-    text-align: justify;
+    padding-top: 3%;
   }
+
 
 
   #inner-dealers-container {
     flex-flow: column;
-    text-align: center;
+    text-align: left;
   }
 
 
@@ -254,6 +260,12 @@
 
 /*** dealers page ***/
 
+#map {
+  height: 460px;
+}
+
+
+
 .dealers-note p{
   width: 70%;
   text-align: center;
@@ -327,6 +339,7 @@ nav li {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
 }
 
 #about-intro h2 {
@@ -374,6 +387,10 @@ nav li {
 .about-faq {
   display: block;
   text-align: left;
+  font-family: 'Lato', sans-serif;
+  color: #b3b3b3;
+
+
 }
 
 

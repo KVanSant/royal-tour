@@ -56,6 +56,8 @@
   <section class="dealers-page padding">
     <div id='map'></div>
     <div id="dealers-container">
+      <h2 class="dealer-header">Dealers</h2>
+      <hr class="dealer-hr">
       <div id="inner-dealers-container">
       <div class="dealer">
           <h3 class="location-name">Paris on Ponce</h3>
@@ -82,6 +84,7 @@
             Atlanta, GA 30318 <br>
             <a href="tel:(404) 922-1954">404-922-1954</a> <br>
             <a href="https://www.facebook.com/TheGoatFarmArtsCenter">Website</a> <br>
+            <span class="appt-only">By appointment only</span>
           </p>
       </div>
       </div>
@@ -115,7 +118,10 @@
         var map = L.mapbox.map('map', 'mapbox.streets')
           .setView([33.808102, -84.38119], 12);
 
+        L.mapbox.styleLayer('mapbox://styles/mapbox/emerald-v8').addTo(map);
+
         var myLayer = L.mapbox.featureLayer().addTo(map);
+
 
           var geojson = {
             type: 'FeatureCollection',
@@ -123,7 +129,7 @@
                 type: 'Feature',
                 properties: {
                     title: 'Peachtree Bikes',
-                    'marker-color': '#000000',
+                    'marker-color': '#C8656D',
                     'marker-size': 'large',
                     'marker-symbol': 'bicycle',
                     url: 'http://www.peachtreebikes.com/'
@@ -137,7 +143,7 @@
                 type: 'Feature',
                 properties: {
                     title: 'The Goat Farm',
-                    'marker-color': '#000000',
+                    'marker-color': '#C8656D',
                     'marker-size': 'large',
                     'marker-symbol': 'bicycle',
                     url: 'https://www.facebook.com/TheGoatFarmArtsCenter'
@@ -151,7 +157,7 @@
                 type: 'Feature',
                 properties: {
                     title: 'Paris on Ponce',
-                    'marker-color': '#000000',
+                    'marker-color': '#C8656D',
                     'marker-size': 'large',
                     'marker-symbol': 'bicycle',
                     url: 'https://www.facebook.com/TheGoatFarmArtsCenter'
