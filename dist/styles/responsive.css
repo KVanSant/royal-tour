@@ -55,7 +55,7 @@
   }
 
   .row-text p {
-    text-align: justify;
+    text-align: left;
   }
 
   .row-text h2 {
@@ -163,6 +163,10 @@
     font-size: 2em;
   }
 
+  .bicycle-story p:first-of-type {
+    text-align: left;
+  }
+
 
   #about-sidebar {
     padding-bottom: 3%;
@@ -240,6 +244,10 @@
   display: inline-block;
   padding: 2% 2%;
 }
+
+
+
+
 
 /*** about page ***/
 
