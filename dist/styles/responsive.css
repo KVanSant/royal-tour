@@ -144,6 +144,7 @@
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
 
+/*** nav ***/
 
   .mobile-nav {
       padding-left: 2%;
@@ -159,6 +160,7 @@
     width: auto;
   }
 
+/*** models page ***/
   .bike-name {
     font-size: 2em;
   }
@@ -167,6 +169,18 @@
     text-align: left;
   }
 
+/*** process page ***/
+  .process-intro p {
+    text-align: left;
+    width: 90%;
+  }
+
+  #artisan-intro p {
+    text-align: left;
+    width: 90%;
+  }
+
+/*** about page ***/
 
   #about-sidebar {
     padding-bottom: 3%;
@@ -182,7 +196,7 @@
     padding-top: 3%;
   }
 
-
+/*** dealers page ***/
 
   #inner-dealers-container {
     flex-flow: column;
@@ -246,9 +260,32 @@
 }
 
 
+/*** process page ***/
+
+.process-intro p {
+  width: 60%;
+}
 
 
+.process-description-wrapper {
+  width: 30%;
+  margin: 1%;
+  display: inline-block;
+}
 
+
+#artisan-intro p{
+  width: 60%;
+}
+
+
+.artisan {
+  width: 33.333333333%;
+}
+
+.artisan-img-wrapper {
+  margin-bottom: 2%;
+}
 /*** about page ***/
 
 
@@ -278,6 +315,16 @@
   width: 70%;
   text-align: center;
 
+}
+
+
+.faq-wrapper {
+  border: 50px solid white;
+  width: 75%;
+}
+
+.faq-container {
+  width: 80%;
 }
 
 
@@ -336,14 +383,23 @@ nav li {
 }
 
 
+/*** process page ***/
+
+.process-description-wrapper {
+  width: 25%;
+  margin: 3%;
+}
+
+
+
 /*** about page ***/
 
 #about-intro {
   height: 320px;
   width: 100%;
-  background: url("/assets/images/blackandblue.png") no-repeat;
+  background: url("/assets/images/blackblue.jpeg") no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: middle;
   display: flex;
   flex-direction: column;
   justify-content: center;
