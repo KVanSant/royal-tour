@@ -161,6 +161,18 @@
   }
 
 /*** models page ***/
+
+
+.model-intro p {
+  text-align: left;
+  line-height: 26px;
+  font-size: 19px;
+
+  width: 90%;
+
+}
+
+
   .bike-name {
     font-size: 2em;
   }
@@ -237,14 +249,38 @@
 
 /*** models page ***/
 
-.model-list {
-  width: 90%;
+
+.model-intro-container {
+  background: url("/assets/images/front.png"), url("/assets/images/back.png");
+  background-position: left center, right center;
+  background-repeat: no-repeat;
+  background-size: 50%, 50%;
+}
+
+.responsive-break {
+  display: none;
+}
+
+#model-list {
+  width: 100%;
   margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-end;
 }
+
 .model-container {
-  display: block;
-  width: 50%;
+  width: 45%;
 }
+
+.responsive-placeholder {
+  display: flex;
+}
+
+/*** individual models page ***/
 
 .specs-divider {
   display: inline-block;
@@ -346,6 +382,23 @@ nav li {
   font-size: 16px;
 }
 
+
+
+/*** models page ***/
+
+
+
+.model-intro p {
+  text-align: center;
+  line-height: 28px;
+  font-size: 22px;
+  padding: 3%;
+  width: 65%;
+}
+
+
+
+
 /*** individual models page ***/
 
 
@@ -399,7 +452,7 @@ nav li {
   width: 100%;
   background: url("/assets/images/blackblue.jpeg") no-repeat;
   background-size: cover;
-  background-position: middle;
+  background-position: top;
   display: flex;
   flex-direction: column;
   justify-content: center;
