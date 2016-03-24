@@ -21,6 +21,11 @@ a {
   color: #383D3B;
 }
 
+a, img {
+    border:none;
+    outline:none
+}
+
 li {
     list-style: none;
 }
@@ -601,8 +606,36 @@ div.thumbnails-wrapper img {
   padding: 5% 0;
 }
 
+
+
+.pa {
+  background: url("/assets/images/philadelphia.jpg") no-repeat
+}
+
+
+.dk {
+  background: url("/assets/images/copenhagen.jpg") no-repeat;
+}
+
+.or {
+  background: url("/assets/images/bendoregon.jpg") no-repeat;
+}
+
+
+.ga-one {
+  background: url("/assets/images/atlskyline.jpg") no-repeat;
+}
+
+.ga-two {
+  background: url("/assets/images/atlanta_skyline_rr.jpg") no-repeat;
+}
+
+.ga-three {
+  background: url("/assets/images/atlanta.jpg") no-repeat;
+}
+
+
 .artisan {
-  background: url("/assets/images/temp.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -611,7 +644,9 @@ div.thumbnails-wrapper img {
   flex-direction: column;
   text-align: center;
   float: left;
+
 }
+
 
 .artisan h4 {
   font-family: 'Lato', sans-serif;
