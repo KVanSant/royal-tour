@@ -21,7 +21,7 @@
     }
 
 
-    #logo {
+    .logo {
       height: 108.714px;
       width: 108.714px;
     }
@@ -148,7 +148,7 @@
 
   .mobile-nav {
       padding: 0;
-      margin: 0
+      margin: 0;
       width: 100%;
   }
 
@@ -161,7 +161,7 @@
     width: auto;
   }
 
-  #logo {
+  .logo {
     height: 90.714px;
     width: 90.714px;
   }
@@ -190,6 +190,11 @@
   }
 
 /*** process page ***/
+
+.artisan-heading h2 {
+  font-size: 3.5em;
+}
+
   .process-intro p {
     text-align: left;
     width: 90%;

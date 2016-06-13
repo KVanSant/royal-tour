@@ -23,7 +23,7 @@ a {
 
 a, img {
     border:none;
-    outline:none
+
 }
 
 li {
@@ -83,7 +83,7 @@ nav li a {
 }
 
 
-#logo {
+.logo {
   height: 118.714px;
   width: 118.714px;
 }
@@ -114,7 +114,7 @@ nav li a {
   width: 100%;
   background: white;
   height: 100%;
-  transition: .4s;
+  transition: .2s;
   box-shadow: 0 0 20px #a6a6a6;
 }
 
@@ -148,7 +148,7 @@ nav li a {
 
 .show {
   transform: translateY(175px);
-  transition: transform .4s;
+  transition: transform .2s;
 }
 
 .icon {
@@ -354,7 +354,7 @@ nav li a {
 .responsive-placeholder {
   display: none;
 }
-/********************** Individual Bike Modal *************************/
+/********************** Individual Bike Model *************************/
 
 #bicycle-main {
   padding-bottom: 5%;
@@ -386,7 +386,6 @@ div.thumbnails-wrapper img {
 
 
 .bicycle-story-wrapper {
-  width: 60%
   height: 100%;
   display: block;
 }
@@ -688,17 +687,22 @@ div.thumbnails-wrapper img {
 
 
 #about-intro {
-  height: 220px;
+  height: 200px;
   width: 100%;
   background: none;
-  display: flex;
+  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox;      /* TWEENER - IE 10 */
+  display: -webkit-flex;     /* NEW - Chrome */
+  display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
   flex-direction: column;
   justify-content: center;
 }
 
 #about-intro h2 {
+
   text-align: center;
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: 'Lato', sans-serif;
   letter-spacing: 0.2em;
 }
@@ -706,7 +710,6 @@ div.thumbnails-wrapper img {
 
 #about-container {
   width: 100%;
-  text-align: center;
   background-color: white;
   padding: 3%;
   padding-top: 5%;
@@ -1101,6 +1104,21 @@ section.dealers-page {
 
 .faq ol {
   padding: 0;
+}
+
+/********************** Temp Store *************************/
+
+.temp-store {
+  background: url("/assets/images/gazelle_zps04f1c00e.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 850px;
+}
+
+
+.temp-store h1 {
+  text-align: center;
+  font-size: 5em;
 }
 /********************** Footer *************************/
 
